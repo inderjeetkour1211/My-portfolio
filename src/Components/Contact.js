@@ -43,9 +43,9 @@ const Contact = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-6 flex items-center rounded-md bg-gradient-to-r from-red-500 to-red-700 cursor-pointer mx-auto"
+              className="group text-white w-fit px-6 py-3 my-6 flex items-center rounded-md bg-gradient-to-r from-red-500 to-red-700 cursor-pointer mx-auto font-semibold duration-200 hover:scale-105"
             >
-              Send message
+              Send Message
             </button>
           </form>
         </div>

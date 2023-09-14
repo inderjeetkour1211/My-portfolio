@@ -1,6 +1,6 @@
 import React from "react";
 import HeroImage from "../assets/HeroImage.png";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 import { Link } from "react-scroll";
 const Home = () => {
   return (
@@ -18,22 +18,33 @@ const Home = () => {
           </h1>
           <p className="text-2xl md:text-3xl py-3 text-white">
             I am a Front End Developer
-          </p>
+          </p> 
+          <div className="flex flex-col sm:flex-row sm:gap-5"> 
           <div>
             <Link
-              to="projects"
+              to="contact"
               smooth
               duration={500}
-              className="group mx-auto mt-3 mb-7 md:mx-0 md:mt-0 md:mb-0 text-white w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-red-500 to-red-700 cursor-pointer"
+              className="group mx-auto mt-3 mb-6 md:mx-0 md:mt-0 md:mb-0 text-white w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-red-500 to-red-700 cursor-pointer font-semibold duration-200 hover:scale-105 "
             >
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-              </span>
+              Contact Me
+             
             </Link>
           </div>
 
-          <div></div>
+          <div>
+            <a
+              href="/InderjeetKour_Resume.pdf"  target="_blank"
+              rel="noreferrer" 
+              smooth
+              duration={500}
+              className="group mx-auto mt-1 mb-7 md:mx-0 md:mt-0 md:mb-0 text-white w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-red-500 to-red-700 cursor-pointer font-semibold duration-200 hover:scale-105"
+            >
+              See My Resume
+              
+            </a>
+          </div> 
+         </div>
         </div>
         <div className="w-full md:w-1/2 flex justify-center">
           <img
