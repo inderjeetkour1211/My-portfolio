@@ -2,6 +2,7 @@ import React from "react";
 import FoodVibes from "../assets/FoodVibes.jpeg";
 import WeatherApp from "../assets/WeatherApp.jpeg";
 import Portfolio from "../assets/Portfolio.png";
+import Mipass from "../assets/Mipass.png"
 const Projects = () => {
   const Project = [
     {
@@ -24,6 +25,15 @@ const Projects = () => {
     },
     {
       id: 3,
+      srcImg: Mipass,
+      liveURL: "https://mipass.netlify.app/",
+      codeURL: "https://github.com/inderjeetkour1211/MiPass-Password-Generator",
+      tech: "React.js, Vite",
+      title: "Password Generator",
+       description: "MiPass creates complex, secure passwords effortlessly with customizable options for length, numbers, and special characters. "
+    },
+    {
+      id: 4,
       srcImg: WeatherApp,
       liveURL: "https://inweather-app.netlify.app/",
       codeURL: "https://github.com/inderjeetkour1211/Weather-App",
