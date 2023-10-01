@@ -30,7 +30,7 @@ const Projects = () => {
       codeURL: "https://github.com/inderjeetkour1211/MiPass-Password-Generator",
       tech: "React.js, Vite",
       title: "Password Generator",
-       description: "MiPass creates complex, secure passwords effortlessly with customizable options for length, numbers, and special characters. "
+       description: "MiPass is a powerful password generator app built with React. Create complex, secure passwords effortlessly with customizable options for length, numbers, and special characters. "
     },
     {
       id: 4,
@@ -55,32 +55,33 @@ const Projects = () => {
           <p className="py-6 text-xl">Check out some of my work </p>
         </div>
 
-        <div className="grid px-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:px-12 sm:px-2">
-          {Project.map(({ id, srcImg, title, liveURL, codeURL, description }) => ( 
-             <a href={liveURL} target="_blank" rel="noreferrer">                        
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={srcImg}
-                alt="title"
-                className="rounded-md duration-200 hover:scale-105 h-64 object-cover"
-              />
-              <p className="font-semibold text-center pt-5">{title}</p> 
-              <p className="px-4 py-3">{description}</p>
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:text-red-600 hover:scale-105">
-               
-                    Demo
-                </button>
+        <div className="grid px-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:px-12 sm:px-2">
+  {Project.map(({ id, srcImg, title, liveURL, codeURL, description }) => ( 
+    <a href={liveURL} target="_blank" rel="noreferrer" className="flex flex-col h-full">                        
+      <div key={id} className="shadow-md shadow-gray-600 rounded-lg flex-1">
+        <img
+          src={srcImg}
+          alt="title"
+          className="rounded-md duration-200 hover:scale-105 h-64 object-cover"
+        />
+        <p className="font-semibold text-center pt-5">{title}</p> 
+        <p className="px-4 py-3">{description}</p>
+        <div className="flex items-center justify-center">
+          <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:text-red-600 hover:scale-105">
+            Demo
+          </button>
 
-                <button className="w-1/2 px-6 py-3 m-4 duration-200  hover:text-red-600 hover:scale-105">
-                  <a href={codeURL} target="_blank" rel="noreferrer">
-                    Code
-                  </a>
-                </button>
-              </div>
-            </div> </a>
-          ))}
+          <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:text-red-600 hover:scale-105">
+            <a href={codeURL} target="_blank" rel="noreferrer">
+              Code
+            </a>
+          </button>
         </div>
+      </div>
+    </a>
+  ))}
+</div>
+
       </div>
     </div>
   );
